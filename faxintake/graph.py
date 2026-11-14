@@ -10,7 +10,7 @@ from __future__ import annotations
 import base64
 import random
 from dataclasses import dataclass
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 import httpx
 
@@ -21,7 +21,7 @@ RETRYABLE = {429, 500, 502, 503, 504}
 
 class GraphError(Exception):
     def __init__(self, status: int, code: str, message: str, method: str = "", path: str = ""):
-        super().__init__(f"{status} {code}: {message} ({method} {path})")
+        super().__init__(f"{status} {code}: {message} ({method} {unquote(path)})")
         self.status, self.code, self.message = status, code, message
 
     @property

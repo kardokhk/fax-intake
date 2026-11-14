@@ -42,7 +42,7 @@ def daily_summary(fi: FaxIntake, days: int = 1) -> dict:
                       f"Duplicate copies skipped:      {out['duplicates_skipped']}",
                       f"Possible re-sends (both kept): {out['possible_resends']}",
                       f"Emails moved to review:        {out['emails_to_review']}",
-                      f"Recovered after a failed try:  {out['retries_after_failure']}",
+                      f"Retries after a failed try:    {out['retries_after_failure']}",
                       f"Alerts sent:                   {out['alerts_sent']}",
                       f"Integrity check:               {'all files unchanged' if not bad else str(len(bad)) + ' problem(s)'}"]
                      + [f"  - {b}" for b in bad])

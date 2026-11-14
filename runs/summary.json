@@ -1,0 +1,184 @@
+{
+ "clean": {
+  "seeds": 5,
+  "emails": 7464,
+  "unique": 7034,
+  "svc_missing": 0,
+  "svc_dup": 0,
+  "svc_altered": 0,
+  "svc_overwrites": 0,
+  "svc_left_in_inbox": 0,
+  "svc_outcome_events": 7464,
+  "svc_audit_outbox_left": 0,
+  "svc_no_attachment": 30,
+  "svc_no_attachment_to_review": 30,
+  "resends": 215,
+  "resends_flagged": 215,
+  "resend_flags_total": 997,
+  "svc_crashes": 0,
+  "svc_retries": 0,
+  "injected": {
+   "throttle": 0,
+   "error": 0,
+   "lost": 0,
+   "outage": 0
+  },
+  "unexplained_alerts": 0,
+  "alerts_total": 30,
+  "basic_missing": 5,
+  "basic_dup": 400,
+  "basic_failed_runs": 0,
+  "basic_no_attachment_unreported": 30,
+  "not_delivered": 0,
+  "latency_normal_median_of_medians": 2.5,
+  "latency_normal_max_p95": 4.8,
+  "latency_normal_max": 5.0,
+  "incidents": {}
+ },
+ "everyday": {
+  "seeds": 5,
+  "emails": 7464,
+  "unique": 7034,
+  "svc_missing": 0,
+  "svc_dup": 0,
+  "svc_altered": 0,
+  "svc_overwrites": 0,
+  "svc_left_in_inbox": 0,
+  "svc_outcome_events": 7464,
+  "svc_audit_outbox_left": 0,
+  "svc_no_attachment": 30,
+  "svc_no_attachment_to_review": 30,
+  "resends": 215,
+  "resends_flagged": 215,
+  "resend_flags_total": 996,
+  "svc_crashes": 81,
+  "svc_retries": 3627,
+  "injected": {
+   "throttle": 2273,
+   "error": 1078,
+   "lost": 276,
+   "outage": 0
+  },
+  "unexplained_alerts": 0,
+  "alerts_total": 30,
+  "basic_missing": 5,
+  "basic_dup": 400,
+  "basic_failed_runs": 1,
+  "basic_no_attachment_unreported": 30,
+  "not_delivered": 0,
+  "latency_normal_median_of_medians": 2.5,
+  "latency_normal_max_p95": 4.8,
+  "latency_normal_max": 23.9,
+  "incidents": {}
+ },
+ "outages": {
+  "seeds": 5,
+  "emails": 7350,
+  "unique": 6928,
+  "svc_missing": 0,
+  "svc_dup": 0,
+  "svc_altered": 0,
+  "svc_overwrites": 0,
+  "svc_left_in_inbox": 0,
+  "svc_outcome_events": 7350,
+  "svc_audit_outbox_left": 0,
+  "svc_no_attachment": 30,
+  "svc_no_attachment_to_review": 30,
+  "resends": 210,
+  "resends_flagged": 209,
+  "resend_flags_total": 968,
+  "svc_crashes": 84,
+  "svc_retries": 8659,
+  "injected": {
+   "throttle": 2316,
+   "error": 1123,
+   "lost": 282,
+   "outage": 7200
+  },
+  "unexplained_alerts": 0,
+  "alerts_total": 70,
+  "basic_missing": 114,
+  "basic_dup": 389,
+  "basic_failed_runs": 114,
+  "basic_no_attachment_unreported": 30,
+  "not_delivered": 114,
+  "latency_normal_median_of_medians": 2.6,
+  "latency_normal_max_p95": 4.8,
+  "latency_normal_max": 20.3,
+  "latency_incident_max": 543.9,
+  "latency_incident_n": 495,
+  "incidents": {
+   "sharepoint_outage": {
+    "n": 5,
+    "alerted": 5,
+    "duration_min": 240,
+    "minutes_to_alert_median": 37.3,
+    "minutes_to_alert_max": 52.3,
+    "first_alert_kinds": [
+     "[Monitor] no healthy fax intake run for 20 minutes"
+    ]
+   },
+   "mail_outage": {
+    "n": 5,
+    "alerted": 5,
+    "duration_min": 120,
+    "minutes_to_alert_median": 19.5,
+    "minutes_to_alert_max": 21.8,
+    "first_alert_kinds": [
+     "[Monitor] no healthy fax intake run for 20 minutes"
+    ]
+   },
+   "register_outage": {
+    "n": 5,
+    "alerted": 5,
+    "duration_min": 90,
+    "minutes_to_alert_median": 33.9,
+    "minutes_to_alert_max": 46.8,
+    "first_alert_kinds": [
+     "[Fax intake] 1 fax(es) not yet saved",
+     "[Fax intake] 3 fax(es) not yet saved"
+    ]
+   },
+   "host_down_night": {
+    "n": 5,
+    "alerted": 5,
+    "duration_min": 660,
+    "minutes_to_alert_median": 21.9,
+    "minutes_to_alert_max": 23.2,
+    "first_alert_kinds": [
+     "[Monitor] no healthy fax intake run for 20 minutes"
+    ]
+   },
+   "host_down_day": {
+    "n": 5,
+    "alerted": 5,
+    "duration_min": 180,
+    "minutes_to_alert_median": 23.5,
+    "minutes_to_alert_max": 24.8,
+    "first_alert_kinds": [
+     "[Monitor] no healthy fax intake run for 20 minutes"
+    ]
+   },
+   "notifications_stopped": {
+    "n": 5,
+    "alerted": 5,
+    "duration_min": 240,
+    "minutes_to_alert_median": 187.9,
+    "minutes_to_alert_max": 221.2,
+    "first_alert_kinds": [
+     "[Fax intake] No faxes received for 3 hours"
+    ]
+   },
+   "access_denied": {
+    "n": 5,
+    "alerted": 5,
+    "duration_min": 360,
+    "minutes_to_alert_median": 17.9,
+    "minutes_to_alert_max": 24.0,
+    "first_alert_kinds": [
+     "[Monitor] no healthy fax intake run for 20 minutes"
+    ]
+   }
+  }
+ }
+}

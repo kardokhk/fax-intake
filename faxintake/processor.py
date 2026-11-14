@@ -269,7 +269,7 @@ class FaxIntake:
             oldest = min(m["receivedDateTime"] for m in late)
             if self.alerter.alert("overdue", f"{len(late)} fax(es) not yet saved",
                                   f"{len(late)} fax email(s) have waited more than {self.s.overdue_minutes} minutes. "
-                                  f"Oldest received {oldest}. The service keeps retrying every run; recent errors:\n"
+                                  f"Oldest received {oldest} (UTC). The service keeps retrying every run; recent errors:\n"
                                   + "\n".join(rep.errors[-5:])):
                 rep.alerts += 1
 

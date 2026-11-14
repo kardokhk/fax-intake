@@ -1,0 +1,102 @@
+{
+ "seed": 1,
+ "service": {
+  "scenario": "clean",
+  "approach": "service",
+  "emails": 1508,
+  "emails_not_delivered_by_fax_service": 0,
+  "emails_by_kind": {
+   "fax": 1380,
+   "resend": 43,
+   "dup_delivery": 56,
+   "dup_notification": 27,
+   "no_attachment": 2
+  },
+  "unique_fax_files": 1423,
+  "stored_files": 1423,
+  "missing": 0,
+  "duplicate_files": 0,
+  "altered_or_unknown": 0,
+  "overwrites": 0,
+  "requests": 33549,
+  "injected": {
+   "throttle": 0,
+   "error": 0,
+   "lost": 0,
+   "outage": 0
+  },
+  "runs": 8928,
+  "crashes": 0,
+  "retries": 0,
+  "audit_outbox_left": 0,
+  "alerts": [
+   {
+    "time": "2026-09-04T17:05:00Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-09T17:15:02Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   }
+  ],
+  "emails_left_in_inbox": 0,
+  "no_attachment": 2,
+  "no_attachment_to_review": 2,
+  "register_rows": 1423,
+  "register_saved": 1423,
+  "emails_with_outcome_event": 1508,
+  "emails_filed_event": 1506,
+  "audit_events": 4641,
+  "audit_events_by_type": {
+   "received": 1423,
+   "saved": 1423,
+   "email_filed": 1506,
+   "possible_resend": 202,
+   "duplicate_skipped": 83,
+   "no_attachment": 2,
+   "alert_sent": 2
+  },
+  "resends": 43,
+  "resends_flagged": 43,
+  "resend_flags_total": 202,
+  "minutes_to_save_normal": {
+   "n": 1423,
+   "median": 2.5,
+   "p95": 4.8,
+   "max": 5.0
+  },
+  "minutes_to_save_during_incidents": null,
+  "incidents": [],
+  "alerts_unexplained": []
+ },
+ "basic_flow": {
+  "scenario": "clean",
+  "approach": "basic_flow",
+  "emails": 1508,
+  "emails_not_delivered_by_fax_service": 0,
+  "emails_by_kind": {
+   "fax": 1380,
+   "resend": 43,
+   "dup_delivery": 56,
+   "dup_notification": 27,
+   "no_attachment": 2
+  },
+  "unique_fax_files": 1423,
+  "stored_files": 1505,
+  "missing": 1,
+  "duplicate_files": 83,
+  "altered_or_unknown": 0,
+  "overwrites": 0,
+  "requests": 11940,
+  "injected": {
+   "throttle": 0,
+   "error": 0,
+   "lost": 0,
+   "outage": 0
+  },
+  "failed_runs_silent": 0,
+  "alerts": [],
+  "no_attachment_reported": 0,
+  "no_attachment": 2
+ }
+}

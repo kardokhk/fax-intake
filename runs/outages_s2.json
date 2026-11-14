@@ -1,0 +1,226 @@
+{
+ "seed": 2,
+ "service": {
+  "scenario": "outages",
+  "approach": "service",
+  "emails": 1416,
+  "emails_not_delivered_by_fax_service": 27,
+  "emails_by_kind": {
+   "fax": 1305,
+   "dup_delivery": 46,
+   "resend": 40,
+   "dup_notification": 18,
+   "no_attachment": 7
+  },
+  "unique_fax_files": 1345,
+  "stored_files": 1345,
+  "missing": 0,
+  "duplicate_files": 0,
+  "altered_or_unknown": 0,
+  "overwrites": 0,
+  "requests": 34841,
+  "injected": {
+   "throttle": 479,
+   "error": 182,
+   "lost": 62,
+   "outage": 1398
+  },
+  "runs": 8724,
+  "crashes": 19,
+  "retries": 1676,
+  "audit_outbox_left": 0,
+  "alerts": [
+   {
+    "time": "2026-09-02T14:45:02Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-04T20:35:16Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-07T19:50:03Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-08T15:50:05Z",
+    "subject": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "time": "2026-09-08T15:59:29Z",
+    "subject": "[Fax intake] 2 fax(es) not yet saved"
+   },
+   {
+    "time": "2026-09-15T19:11:51Z",
+    "subject": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "time": "2026-09-16T15:59:56Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-17T14:09:29Z",
+    "subject": "[Fax intake] 1 fax(es) not yet saved"
+   },
+   {
+    "time": "2026-09-18T19:04:43Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-22T02:44:39Z",
+    "subject": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "time": "2026-09-23T15:54:39Z",
+    "subject": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "time": "2026-09-23T21:34:40Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-24T18:04:51Z",
+    "subject": "[Fax intake] No faxes received for 3 hours"
+   },
+   {
+    "time": "2026-09-25T22:19:40Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-28T14:09:40Z",
+    "subject": "[Monitor] no healthy fax intake run for 20 minutes"
+   }
+  ],
+  "emails_left_in_inbox": 0,
+  "no_attachment": 7,
+  "no_attachment_to_review": 7,
+  "register_rows": 1345,
+  "register_saved": 1345,
+  "emails_with_outcome_event": 1416,
+  "emails_filed_event": 1409,
+  "audit_events": 4658,
+  "audit_events_by_type": {
+   "received": 1344,
+   "saved": 1356,
+   "email_filed": 1419,
+   "duplicate_skipped": 64,
+   "possible_resend": 183,
+   "no_attachment": 7,
+   "alert_sent": 10,
+   "claim_taken_over": 106,
+   "save_failed": 97,
+   "alert_failed": 72
+  },
+  "resends": 40,
+  "resends_flagged": 39,
+  "resend_flags_total": 182,
+  "minutes_to_save_normal": {
+   "n": 1250,
+   "median": 2.6,
+   "p95": 4.8,
+   "max": 17.8
+  },
+  "minutes_to_save_during_incidents": {
+   "n": 95,
+   "median": 97.4,
+   "p95": 307.6,
+   "max": 543.9
+  },
+  "incidents": [
+   {
+    "incident": "sharepoint_outage",
+    "start": "2026-09-08T14:57:46Z",
+    "end": "2026-09-08T18:57:46Z",
+    "duration_min": 240,
+    "alerted": true,
+    "minutes_to_first_alert": 52.3,
+    "first_alert": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "incident": "mail_outage",
+    "start": "2026-09-15T18:52:23Z",
+    "end": "2026-09-15T20:52:23Z",
+    "duration_min": 120,
+    "alerted": true,
+    "minutes_to_first_alert": 19.5,
+    "first_alert": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "incident": "register_outage",
+    "start": "2026-09-17T13:38:18Z",
+    "end": "2026-09-17T15:08:18Z",
+    "duration_min": 90,
+    "alerted": true,
+    "minutes_to_first_alert": 31.2,
+    "first_alert": "[Fax intake] 1 fax(es) not yet saved"
+   },
+   {
+    "incident": "host_down_night",
+    "start": "2026-09-22T02:21:59Z",
+    "end": "2026-09-22T13:21:59Z",
+    "duration_min": 660,
+    "alerted": true,
+    "minutes_to_first_alert": 22.7,
+    "first_alert": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "incident": "host_down_day",
+    "start": "2026-09-23T15:30:23Z",
+    "end": "2026-09-23T18:30:23Z",
+    "duration_min": 180,
+    "alerted": true,
+    "minutes_to_first_alert": 24.3,
+    "first_alert": "[Monitor] no healthy fax intake run for 20 minutes"
+   },
+   {
+    "incident": "notifications_stopped",
+    "start": "2026-09-24T15:00:10Z",
+    "end": "2026-09-24T19:00:10Z",
+    "duration_min": 240,
+    "alerted": true,
+    "minutes_to_first_alert": 184.7,
+    "first_alert": "[Fax intake] No faxes received for 3 hours"
+   },
+   {
+    "incident": "access_denied",
+    "start": "2026-09-28T13:53:53Z",
+    "end": "2026-09-28T19:53:53Z",
+    "duration_min": 360,
+    "alerted": true,
+    "minutes_to_first_alert": 15.8,
+    "first_alert": "[Monitor] no healthy fax intake run for 20 minutes"
+   }
+  ],
+  "alerts_unexplained": []
+ },
+ "basic_flow": {
+  "scenario": "outages",
+  "approach": "basic_flow",
+  "emails": 1416,
+  "emails_not_delivered_by_fax_service": 27,
+  "emails_by_kind": {
+   "fax": 1305,
+   "dup_delivery": 46,
+   "resend": 40,
+   "dup_notification": 18,
+   "no_attachment": 7
+  },
+  "unique_fax_files": 1345,
+  "stored_files": 1387,
+  "missing": 21,
+  "duplicate_files": 63,
+  "altered_or_unknown": 0,
+  "overwrites": 0,
+  "requests": 11913,
+  "injected": {
+   "throttle": 123,
+   "error": 54,
+   "lost": 3,
+   "outage": 163
+  },
+  "failed_runs_silent": 22,
+  "alerts": [],
+  "no_attachment_reported": 0,
+  "no_attachment": 7
+ }
+}

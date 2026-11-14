@@ -1,0 +1,25 @@
+Subject: [Fax intake] Fax email arrived without a fax file
+Sent: 2026-11-16 15:25 UTC
+
+An email from the fax service, received 2026-11-16T15:25:00Z, has no PDF or TIFF attached. It was moved to 'Faxes - Needs Review' for a person to check.
+
+Subject: [Fax intake] 1 fax(es) not yet saved
+Sent: 2026-11-16 15:40 UTC
+
+1 fax email(s) have waited more than 30 minutes. Oldest received 2026-11-16T15:09:00Z (UTC). The service keeps retrying every run; recent errors:
+AAkALg4ba955f3e40961505d698c8b44480030: 503 serviceUnavailable: injected outage (PUT /drives/drive-intake/root:/Incoming Faxes/2026/11/2026-11-16_0909_from-5550167710_3p_28b3dabc.pdf:/content)
+AAkALg564274036988f668b67d153d399dab3c: 503 serviceUnavailable: injected outage (PUT /drives/drive-intake/root:/Incoming Faxes/2026/11/2026-11-16_0940_from-5550142231_1p_97c37684.tif:/content)
+
+Subject: [Fax intake] Daily summary
+Sent: 2026-11-17 13:00 UTC
+
+Fax intake summary since 2026-11-16T13:00:00Z (UTC)
+
+Faxes saved and verified:      8
+Not saved yet (retrying):      0
+Duplicate copies skipped:      2
+Possible re-sends (both kept): 2
+Emails moved to review:        1
+Retries after a failed try:    12
+Alerts sent:                   2
+Integrity check:               all files unchanged

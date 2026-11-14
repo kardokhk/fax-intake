@@ -1,0 +1,123 @@
+{
+ "seed": 2,
+ "service": {
+  "scenario": "everyday",
+  "approach": "service",
+  "emails": 1443,
+  "emails_not_delivered_by_fax_service": 0,
+  "emails_by_kind": {
+   "fax": 1329,
+   "dup_delivery": 48,
+   "resend": 41,
+   "dup_notification": 18,
+   "no_attachment": 7
+  },
+  "unique_fax_files": 1370,
+  "stored_files": 1370,
+  "missing": 0,
+  "duplicate_files": 0,
+  "altered_or_unknown": 0,
+  "overwrites": 0,
+  "requests": 33648,
+  "injected": {
+   "throttle": 462,
+   "error": 212,
+   "lost": 49,
+   "outage": 0
+  },
+  "runs": 8928,
+  "crashes": 19,
+  "retries": 723,
+  "audit_outbox_left": 0,
+  "alerts": [
+   {
+    "time": "2026-09-02T14:45:02Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-04T20:35:16Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-07T19:50:03Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-16T16:00:00Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-18T19:05:14Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-23T21:35:00Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   },
+   {
+    "time": "2026-09-25T22:20:00Z",
+    "subject": "[Fax intake] Fax email arrived without a fax file"
+   }
+  ],
+  "emails_left_in_inbox": 0,
+  "no_attachment": 7,
+  "no_attachment_to_review": 7,
+  "register_rows": 1370,
+  "register_saved": 1370,
+  "emails_with_outcome_event": 1443,
+  "emails_filed_event": 1436,
+  "audit_events": 4471,
+  "audit_events_by_type": {
+   "received": 1373,
+   "saved": 1374,
+   "email_filed": 1447,
+   "duplicate_skipped": 66,
+   "possible_resend": 192,
+   "no_attachment": 7,
+   "alert_sent": 7,
+   "claim_taken_over": 5
+  },
+  "resends": 41,
+  "resends_flagged": 41,
+  "resend_flags_total": 191,
+  "minutes_to_save_normal": {
+   "n": 1370,
+   "median": 2.6,
+   "p95": 4.8,
+   "max": 7.4
+  },
+  "minutes_to_save_during_incidents": null,
+  "incidents": [],
+  "alerts_unexplained": []
+ },
+ "basic_flow": {
+  "scenario": "everyday",
+  "approach": "basic_flow",
+  "emails": 1443,
+  "emails_not_delivered_by_fax_service": 0,
+  "emails_by_kind": {
+   "fax": 1329,
+   "dup_delivery": 48,
+   "resend": 41,
+   "dup_notification": 18,
+   "no_attachment": 7
+  },
+  "unique_fax_files": 1370,
+  "stored_files": 1436,
+  "missing": 0,
+  "duplicate_files": 66,
+  "altered_or_unknown": 0,
+  "overwrites": 0,
+  "requests": 11911,
+  "injected": {
+   "throttle": 127,
+   "error": 72,
+   "lost": 8,
+   "outage": 0
+  },
+  "failed_runs_silent": 0,
+  "alerts": [],
+  "no_attachment_reported": 0,
+  "no_attachment": 7
+ }
+}
