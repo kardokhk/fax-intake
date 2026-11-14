@@ -2,7 +2,7 @@
 that carry them (.eml), and a manifest with the expected outcome of each case.
 
 Everything is invented. Patients are named TEST PATIENT, dates of birth are 01/01/1900, fax and
-phone numbers are in the 555-01xx fictional range, and every page carries a banner saying it is
+phone numbers are in the 555-0100 to 555-0199 range set aside for fictional use, and every page carries a banner saying it is
 fictional test data. The notification email layout is illustrative (RingCentral does not publish
 its exact format); detection relies only on the sender domain and the attachment.
 
@@ -26,20 +26,20 @@ FONT = {k: str(HERE / "fonts" / v) for k, v in
         {"sans": "LiberationSans-Regular.ttf", "bold": "LiberationSans-Bold.ttf", "mono": "LiberationMono-Regular.ttf"}.items()}
 W, H = 1700, 2200   # US Letter at 200 dpi, a common fine fax resolution
 BANNER = "FICTIONAL TEST DATA - NOT A REAL PATIENT"
-AGENCY_FAX = "(555) 019-4400"
+AGENCY_FAX = "(312) 555-0100"
 
 SENDERS = {
-    "riverbend": ("Riverbend Family Medicine", "(555) 014-2231"),
-    "northgate": ("Northgate Regional Hospital - Discharge Planning", "(555) 016-7710"),
-    "lakeside": ("Lakeside Clinical Laboratory", "(555) 018-3302"),
-    "summit": ("Summit Health Plan - Utilisation Review", "(555) 013-9045"),
-    "oakwood": ("Oakwood Cardiology Associates", "(555) 017-5528"),
+    "riverbend": ("Riverbend Family Medicine", "(312) 555-0142"),
+    "northgate": ("Northgate Regional Hospital - Discharge Planning", "(312) 555-0167"),
+    "lakeside": ("Lakeside Clinical Laboratory", "(312) 555-0183"),
+    "summit": ("Summit Health Plan - Utilization Review", "(312) 555-0139"),
+    "oakwood": ("Oakwood Cardiology Associates", "(312) 555-0175"),
 }
 
 DOCS = {
     "referral": ("HOME HEALTH REFERRAL", [
         "Patient: TEST PATIENT, Alpha          DOB: 01/01/1900          Sex: F",
-        "Address: 100 Example Street, Testville          Phone: (555) 010-0001",
+        "Address: 100 Example Street, Testville          Phone: (312) 555-0101",
         "Referring physician: Dr. A. Sample, MD          NPI: 0000000000",
         "Primary diagnosis: post-operative care following hip replacement (fictional)",
         "Services requested: skilled nursing, physical therapy, occupational therapy",
@@ -60,7 +60,7 @@ DOCS = {
         "Patient: TEST PATIENT, Charlie          DOB: 01/01/1900",
         "Certification period: 60 days (fictional dates)",
         "Disciplines: SN 1w4, 2w4; PT 2w4; HHA 2w8",
-        "Goals: independent with home exercise programme; wound healed",
+        "Goals: independent with home exercise program; wound healed",
         "Medications: see attached list (fictional)",
         "Please sign page 4 and fax back to the agency at " + AGENCY_FAX,
     ]),
@@ -73,12 +73,12 @@ DOCS = {
         "Example analyte C        1.4  H      0.6 - 1.2",
         "Results are fictional and for software testing only.",
     ]),
-    "auth": ("PRIOR AUTHORISATION DECISION", [
+    "auth": ("PRIOR AUTHORIZATION DECISION", [
         "Member: TEST PATIENT, Echo          Member ID: TEST-000005",
         "Request: home health skilled nursing, 8 visits",
         "Decision: APPROVED (fictional)",
-        "Authorisation number: AUTH-TEST-0005",
-        "Valid for visits within the fictional authorisation period.",
+        "Authorization number: AUTH-TEST-0005",
+        "Valid for visits within the fictional authorization period.",
     ]),
     "meds": ("MEDICATION LIST AND DISCHARGE SUMMARY", [
         "Patient: TEST PATIENT, Foxtrot          DOB: 01/01/1900",
@@ -196,7 +196,7 @@ def build(out: Path, seed: int = 20261114) -> list[dict]:
     add("02_physician_order", "riverbend", "order", 1, 7, "saved")
     add("03_plan_of_care", "oakwood", "poc", 4, 15, "saved")
     add("04_lab_result", "lakeside", "lab", 2, 22, "saved")
-    add("05_authorisation", "summit", "auth", 1, 31, "saved")
+    add("05_authorization", "summit", "auth", 1, 31, "saved")
     add("06_order_delivered_twice", "riverbend", "order", 1, 7.5, "duplicate skipped (same email delivered twice)",
         reuse="02_physician_order", same_msgid="02_physician_order")
     add("07_poc_second_notification", "oakwood", "poc", 4, 19, "duplicate skipped (second notification, same fax file)",

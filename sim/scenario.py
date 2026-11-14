@@ -1,6 +1,6 @@
 """Generate a month of fictional fax traffic and the faults to replay it against.
 
-All content is synthetic: fax numbers use the 555-01xx fictional range and fax files are random
+All content is synthetic: fax numbers are random 10-digit numbers starting 555 and fax files are random
 bytes behind a PDF or TIFF header (the test bench checks bytes and hashes, not page content).
 The notification email layout is illustrative; RingCentral does not publish its exact format.
 """
