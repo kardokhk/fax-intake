@@ -1,0 +1,21 @@
+# Fax intake settings. Fictional values; replace with the agency's own.
+mailbox: faxes@agency.example
+source_folder: Inbox
+saved_folder: Faxes - Saved
+review_folder: Faxes - Needs Review
+sender_domains: [ringcentral.com]
+file_types: [.pdf, .tif, .tiff]
+site_id: agency.sharepoint.com,00000000-0000-0000-0000-000000000000,00000000-0000-0000-0000-000000000000
+drive_id: b!REPLACE_WITH_DOCUMENT_LIBRARY_DRIVE_ID
+base_path: Incoming Faxes
+register_list: Fax Register
+audit_list: Fax Audit Log
+alert_to: [it-alerts@agency.example]
+timezone: America/Chicago
+lookback_days: 14
+claim_lease_minutes: 15
+overdue_minutes: 30
+alert_repeat_hours: 4
+silence_hours: 3
+business_hours: [8, 18]
+resend_window_hours: 3
