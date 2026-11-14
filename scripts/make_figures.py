@@ -129,8 +129,8 @@ def architecture(out: Path) -> None:
     d.path([(0.74, 0.20), (0.83, 0.20)], OI["red"]); d.label(0.785, 0.212, "alerts", OI["red"])
     d.path([(0.56, 0.47), (0.56, 0.41), (0.33, 0.41), (0.33, 0.32)], OI["red"], ls="--")
     d.label(0.445, 0.422, "heartbeat", OI["red"])
-    d.path([(0.33, 0.10), (0.33, 0.045), (0.905, 0.045), (0.905, 0.10)], OI["red"])
-    d.label(0.62, 0.057, "alert if no healthy run arrives", OI["red"])
+    d.path([(0.33, 0.10), (0.33, 0.028), (0.905, 0.028), (0.905, 0.10)], OI["red"])
+    d.label(0.62, 0.038, "alert if no healthy run arrives", OI["red"])
     problems = d.check(fig)
     if problems:
         raise SystemExit("architecture layout problems:\n  " + "\n  ".join(problems))
